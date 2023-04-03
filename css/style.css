@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background-image: url(https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=pt-US);
+  font-size: 20px;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  background: rgb(89, 89, 89, 0.6);
+  box-shadow: 0px 4px 5px;
+  padding: 2rem;
+  margin: 3% 0px;
+  font: white;
+}
+
+.container-input {
+  display: flex;
+  padding: 0.8rem;
+  flex: 1;
+  border: none;
+  border-radius: 3px;
+}
+
+.container-input input {
+  padding: 0.8rem;
+  padding-left: 60px;
+  border: none;
+  flex: 1;
+  color: #8C8885;
+  border-radius: 3px;
+  box-shadow: grey 0px 1px 5px;
+  font-size: 18px;
+  background-image: url("../assets/search2.svg");
+  background-position: 10px;
+  background-repeat: no-repeat;
+}
+
+.container-input button {
+  padding: 0.8rem;
+  min-width: 50px;
+  margin-left: 8px;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  box-shadow: grey 0px 1px 3px;
+}
+
+#weather-data,
+#error-message,
+#loader,
+#suggestions {
+  border-top: 1px solid #3468FC;
+  margin-top: 1.5rem;
+  text-align: start;
+  padding-left: 20px;
+}
+
+#weather-data {
+  width: 100%;
+  display: grid;
+  justify-content: left;
+  margin: 0;
+  margin-top: 10px;
+  font-weight: 100;
+  color: white;
+  grid-template-columns: 1fr 1fr 0px;
+}
+
+
+#weather-icon {
+  margin-top: 1rem;
+}
+
+#description-container {
+  text-transform: capitalize;
+  margin-top: 2rem;
+  padding-left: 5rem;
+}
+
+
+#description-container div {
+  padding-top: 0.4rem;
+}
+
+#description-container span {
+  font-size: 22px;
+}
+
+.details {
+  font-size: 20px;
+}
+
+#temperature {
+  cursor: pointer
+}
+
+#tomorrow,
+#dayAfter {
+  text-transform: capitalize;
+  margin-top: 2rem;
+  padding-left: 5rem;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+#dayAfter {
+  padding-left: 0rem;
+}
+
+#details-container div {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+#suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#suggestions button {
+  min-width: 150px;
+  margin: 0.8rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 10rem;
+  border: none;
+  color: rgb(255, 255, 255, 0.2);
+  cursor: pointer;
+  font-weight: bold;
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
+#suggestions button:hover {
+  opacity: 1;
+  background-color: #3468FC;
+}
+
+/* Loader */
+#loader i {
+  animation: rotate 1.5s linear infinite;
+}

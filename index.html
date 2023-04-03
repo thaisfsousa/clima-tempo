@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta do Clima</title>
+  <link rel = "icon" href = "./assets/8.svg" type = "image/x-icon" style="width: 100px;">
+  <link rel="stylesheet" href = "css/style.css">
+  <link rel="style" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container" id="container">
+    <div class="form">
+    <div class = "container-input">
+      <input type="text" placeholder="Digite o nome da cidade para consultar o clima" id="city-name"/>
+      <button id="go">
+        <image src="assets/search.svg"> </image>
+      </button>
+    </div>
+    </div>
+    <div class="hide" id="hide">
+    <div id="weather-data">
+      <!-- <div> -->
+        <img src="./assets/sun.svg" alt="Condições do tempo" id="weather-icon";>
+        <!-- </div> -->
+        <div id="description-container">
+          <span id="city"></span>
+          <div id="temperature">HOJE<span></span></div>
+          <div id="description"></div>
+          <div id="wind">Vento: <span></span></div>
+          <div id="humidity">Humidade: <span></span></div>
+          <div id="conditions">Pressão: <span></span></div>
+        </div>
+        <div> </div>
+        <div> </div>
+        <div>
+        <div id="tomorrow">AMANHÃ<br><span></span>
+        <div id="dayAfter">DEPOIS DE AMANHÃ<br><span></span>
+        </div>
+        </div>
+      </div>
+    <!-- </div> -->
+      <div id="announcement" style="padding:10px; color:black"></div>
+      <!-- <div id="error-message" class="hide">
+        <p>Não foi possível encontrar o clima de uma cidade com este nome.</p>
+      </div>
+      <div id="loader" class="hide">
+        <i class="fa-solid fa-spinner"></i>
+      </div>
+      <div id="suggestions">
+        <button id="viena">Viena</button>
+        <button id="copenhague">Copenhague</button>
+        <button id="zurique">Zurique</button>
+        <button id="vancouver">Vancouver</button>
+        <button id="genebra">Genebra</button>
+        <button id="frankfurt">Frankfurt</button>
+        <button id="osaka">Osaka</button>
+        <button id="maceio">Maceió</button>
+      </div>
+      <!-- </div> --> -->
+    </div>
+  </div>
+</body>
+<script src="./App/index.js"></script>
+</html>
